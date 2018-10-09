@@ -1,4 +1,4 @@
-export const skills = [
+export const skills  = [
   {
     id: 1,
     name: 'Leanne Graham',
