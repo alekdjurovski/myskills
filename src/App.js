@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import CardList from './CardList';
 import {skills} from './myskills';
 import SearchBox from './SearchBox';
+import Scroll from './Scroll';
+import './App.css';
 
 
 
@@ -26,9 +28,11 @@ onSearchChange = (event) => {
 	
 	return (
 		<div className="tc">
-			<h1>My Skills</h1>
+			<h1 className='f2'>My Skills</h1>
 			<SearchBox searchChange={this.onSearchChange} />
-			<CardList skills={filterSkills}/>
+			<Scroll>
+				<CardList skills={filterSkills}/>
+			</Scroll>
 		</div>
 	);
 	}
